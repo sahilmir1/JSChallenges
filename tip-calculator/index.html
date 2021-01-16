@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>tip calculator</h1>
+      </header>
+      <div class="calc-body">
+        <div class="instructions">
+          <p>Bill Amount cannot be blank</p>
+          <p>Number of Users Must greater than zero</p>
+          <p>You must select a service</p>
+        </div>
+        <div class="user-input">
+          <p>How much was your bill?</p>
+          <input type="text" id="bill" />
+          <p>How many people sharing the bill</p>
+          <input type="text" id="people" />
+          <p>How was your Service</p>
+          <select name="" id="service">
+            <option value="30">Outstanding 30%</option>
+            <option value="20">Great 20%</option>
+            <option value="10">Ok 10%</option>
+            <option value="0">Poor 0%</option>
+          </select>
+          <button onclick="calculate()">Calculate</button>
+          <h1 id="text1"></h1>
+          <h2 id="result"></h2>
+          <h1 id="text2"></h1>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

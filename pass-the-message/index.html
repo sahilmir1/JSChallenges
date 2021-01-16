@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pass the message</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #5D638B;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background-color: #fff;
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      padding: 2em;
+      text-align: center;
+    }
+    .container input {
+      margin: 2rem 0;
+    }
+
+    .container button {
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form action="">
+
+    </form>
+    <h1>A message you would like to passs</h1>
+    <input type="text" id="userInput" value="" placeholder="Enter message here...">
+    <button onclick="myFunction()">Submit</button>
+    <h2>Last message delivered:</h2>
+    <h1 id="disMessage"></h1>
+  </div>
+
+  <script>
+    function myFunction() {
+      let userMessage = document.getElementById("userInput").value;
+      document.getElementById("disMessage").innerHTML = userMessage;
+}
+    
+  </script>
+</body>
+</html>
